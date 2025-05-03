@@ -167,7 +167,6 @@ const SimulationSection: React.FC<SimulationSectionProps> = ({ properties, origi
               <SelectValue placeholder="Select..." />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="">Select a property...</SelectItem>
               {properties.map(prop => (
                 <SelectItem key={prop.id} value={prop.id.toString()}>
                   {prop.adresse} ({prop.id})
